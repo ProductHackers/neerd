@@ -1,0 +1,43 @@
+{
+  "name": "@product-hackers/neerd",
+  "version": "1.0.0",
+  "description": "neerd is an event emitter for nodejs around redis pubsub",
+  "main": "dist/neerd.cjs.js",
+  "module": "dist/neerd.esm.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest --coverage",
+    "coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
+    "pretest": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ProductHackers/neerd.git"
+  },
+  "keywords": [
+    "redis",
+    "event-emitter",
+    "emitter",
+    "pubsub",
+    "pub-sub"
+  ],
+  "author": "jorchg <jorge@producthackers.es>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ProductHackers/neerd/issues"
+  },
+  "homepage": "https://github.com/ProductHackers/neerd#readme",
+  "devDependencies": {
+    "coveralls": "^3.0.3",
+    "jest": "^24.8.0",
+    "redis-mock": "^0.44.0",
+    "rollup": "^1.13.1"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "redis": "^2.8.0"
+  }
+}

@@ -44,3 +44,9 @@ const testPub = (message = '') => {
   neerdPub.publish('test-channel', JSON.stringify({ message: 'You can also serialize messages' }));
 };
 ```
+
+## Testing
+Running `npm t` builds the library, runs the tests and report coverage.
+
+## License
+[MIT](LICENSE).
